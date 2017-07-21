@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.naveed.noteapplication.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome"
+        android:id="@+id/textView"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#26A69A"
+        android:layout_marginLeft="20dp"
+        android:textSize="50dp" />
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:background="#26A69A"
+        android:textColor="#e54172"
+        android:textSize="50dp"
+        android:layout_above="@+id/email"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/abc_primary_text_disable_only_material_dark"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:drawableRight="@android:drawable/ic_menu_add"
+
+        android:hint="Email" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:outlineProvider="background"
+        android:drawableRight="@android:drawable/ic_menu_add"
+        android:hint="Password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/Login"
+        android:background="#26A69A"
+        android:capitalize="words"
+        android:contextClickable="true"
+        android:elegantTextHeight="false"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:paddingLeft="80dp"
+        android:paddingRight="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/change"
+        android:background="#26A69A"
+        android:capitalize="words"
+        android:contextClickable="true"
+        android:elegantTextHeight="false"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:paddingLeft="50dp"
+        android:layout_below="@+id/Login"
+        android:layout_alignRight="@+id/Login"
+        android:layout_alignEnd="@+id/Login"
+        android:layout_marginTop="30dp"
+        android:paddingRight="50dp" />
+</RelativeLayout>
